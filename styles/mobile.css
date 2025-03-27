@@ -1,0 +1,132 @@
+/* Mobile gallery card tweaks */
+.mobile-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 10px;
+}
+
+.image-card {
+  background: var(--bg-color, #fff);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
+/* Featured image and highlight styling */
+.mobile-feature img,
+.mobile-highlight img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.highlight-text {
+  padding: 0 10px;
+  text-align: center;
+}
+
+/* News block */
+.mobile-news {
+  padding: 10px;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news-thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Pagination */
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  margin: 0 6px;
+}
+
+/* Profile section */
+.mobile-profile {
+  padding: 20px;
+  text-align: center;
+}
+
+.mobile-profile .user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.profile-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.profile-tabs .tab {
+  padding: 8px 12px;
+  border: none;
+  background-color: #ddd;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.profile-tabs .tab.active {
+  background-color: #444;
+  color: white;
+}
+
+/* Auth form */
+.mobile-auth {
+  padding: 20px;
+}
+
+#authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#authForm input {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#authForm button {
+  padding: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+#toggleAuth {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+}

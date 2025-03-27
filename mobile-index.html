@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RailArt : Gallery (Mobile)</title>
+  <link rel="stylesheet" href="styles/mobile.css" />
+  <script defer src="scripts/main.js"></script>
+  <script defer src="scripts/session.js"></script>
+</head>
+<body>
+  <header class="mobile-header">
+    <div class="mobile-logo">RailArt</div>
+    <label class="switch">
+      <input type="checkbox" id="darkToggle" />
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <main class="mobile-container">
+    <!-- Home Page Content -->
+    <section class="mobile-tabs">
+      <button class="tab active" data-tab="hour">Hour</button>
+      <button class="tab" data-tab="week">Week</button>
+      <button class="tab" data-tab="month">Month</button>
+    </section>
+
+    <section class="mobile-feature">
+      <img src="assets/placeholder.png" alt="Featured" id="featuredImage" />
+    </section>
+
+    <section class="mobile-highlight">
+      <img src="assets/placeholder.png" alt="Highlight" />
+      <div class="highlight-text">
+        <strong>Title</strong>
+        <p>Highlight description or teaser.</p>
+      </div>
+    </section>
+
+    <section class="mobile-gallery" id="gallery">
+      <div class="image-card" data-category="hour">
+        <img src="assets/placeholder.png" alt="Gallery Item" />
+        <div class="card-footer">
+          <span>Title</span>
+          <span>9 ❤️</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="mobile-news">
+      <h3>News</h3>
+      <div class="news-item">
+        <img class="news-thumb" src="assets/placeholder.png" alt="News" />
+        <div class="news-text">
+          <strong>Title</strong>
+          <p>News summary for mobile view.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="pagination">
+      <button>&laquo;</button>
+      <button>&raquo;</button>
+    </div>
+
+    <!-- Profile Page Content -->
+    <section class="mobile-profile hidden">
+      <h2>User Profile</h2>
+      <img src="assets/avatar-placeholder.png" class="user-avatar" alt="Avatar" />
+      <strong id="profileName">Username</strong>
+      <div class="profile-tabs">
+        <button class="tab active">Gallery</button>
+        <button class="tab">Favorites</button>
+        <button class="tab">Comments</button>
+      </div>
+      <div class="profile-content">
+        <p>Dynamic user content here</p>
+      </div>
+    </section>
+
+    <!-- Login/Register Pages -->
+    <section class="mobile-auth hidden">
+      <h2 id="authTitle">Login</h2>
+      <form id="authForm">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Submit</button>
+        <a href="#" id="toggleAuth">Switch to Register</a>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>2025 © All rights reserved</p>
+  </footer>
+</body>
+</html>

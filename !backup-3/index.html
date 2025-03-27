@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RailArt : Gallery</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">RailArt : Gallery</div>
+    <nav class="nav-links">
+      <a href="#">Places</a>
+      <a href="#">Galleries</a>
+      <a href="#">Stats</a>
+      <a href="#">People</a>
+    </nav>
+
+	<div class="search-auth">
+	<input type="text" id="searchInput" placeholder="Search...">
+	  <div class="user-profile hidden">
+		  <img src="assets/avatar-placeholder.png" alt="Avatar" class="user-avatar" id="userAvatar" />
+	  <span class="user-greeting">Welcome, <a href="profile.html" id="userLink">User</a></span>
+	  </div>
+	  <a href="login.html" class="login-link">Login</a>
+	  <a href="register.html" class="register-link">Register</a>
+	  <a href="#" class="logout-link hidden">Log out</a>
+	  <label class="switch">
+	    <input type="checkbox" id="darkToggle" />
+	    <span class="slider"></span>
+	  </label>
+	</div>
+    
+  </header>
+
+  <main class="container">
+    <section class="top-feature-row">
+      <div class="top-feature-tabs">
+        <div class="top-tabs">
+          <button class="tab active" data-tab="hour">Top of the hour</button>
+          <button class="tab" data-tab="week">Top of the week</button>
+          <button class="tab" data-tab="month">Top of the month</button>
+        </div>
+        <div class="featured">
+          <img src="assets/placeholder.png" alt="Featured" id="featuredImage">
+        </div>
+      </div>
+      <div class="highlight">
+        <img src="assets/placeholder.png" alt="Highlight">
+        <div class="highlight-text">
+          <strong>Title</strong>
+          <p>Body text for whatever you'd like to say. Add takeaway points or quotes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-grid">
+      <div class="gallery-grid" id="gallery">
+        <div class="image-card" data-category="hour">
+          <img src="assets/placeholder.png" alt="Gallery Item">
+          <div class="card-footer">
+            <span>Title</span>
+            <span>9 ❤️</span>
+          </div>
+        </div>
+        <!-- Repeat and vary data-category as needed -->
+      </div>
+
+      <aside class="sidebar">
+        <div class="news">
+          <h3 class="news-header">News & Announcements</h3>
+          <div class="news-item">
+            <img class="news-thumb" src="assets/placeholder.png" alt="News">
+            <div class="news-text">
+              <strong>Title</strong>
+              <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img class="news-thumb" src="assets/placeholder.png" alt="News">
+            <div class="news-text">
+              <strong>Title</strong>
+              <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="pagination">
+      <button>&laquo; Previous</button>
+      <button>Next &raquo;</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <p>2025 © All rights reserved and belong to respective authors</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script defer src="scripts/session.js"></script>
+</body>
+</html>

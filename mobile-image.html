@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Image View</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/image.css" />
+  <link rel="stylesheet" href="styles/mobile.css" />
+  <script defer src="scripts/image.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">RailArt : Gallery</div>
+    <div class="search-auth">
+      <a href="login.html" class="login-link">Login</a>
+      <a href="register.html" class="register-link">Register</a>
+      <a href="#" class="logout-link hidden">Log out</a>
+      <label class="switch">
+        <input type="checkbox" id="darkToggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </header>
+
+  <main class="image-detail-mobile">
+    <div class="image-preview">
+      <img id="imageElement" src="assets/placeholder.png" alt="Image" />
+    </div>
+    <div class="image-info">
+      <h2 id="title">Title</h2>
+      <p><strong>Alt:</strong> <span id="altTitle">Alt Title</span></p>
+      <p><strong>Author:</strong> <span id="author">Unknown</span></p>
+      <p><strong>Stock:</strong> <span id="stock">N/A</span></p>
+      <p><strong>EXIF:</strong> <span id="exif">None</span></p>
+      <p><strong>Likes:</strong> <span id="likesCount">0</span> ❤️</p>
+    </div>
+    <div class="image-actions">
+      <button id="likeBtn">👍</button>
+      <button id="dislikeBtn">👎</button>
+      <button id="favBtn">❤️</button>
+      <button id="shareBtn">🔗</button>
+    </div>
+
+    <div id="comments" class="comments"></div>
+
+    <div class="leave-comment">
+      <h3>Leave a Comment</h3>
+      <textarea id="newCommentText" placeholder="Your comment..."></textarea>
+      <button id="submitCommentBtn">Post</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>2025 © All rights reserved</p>
+  </footer>
+</body>
+</html>

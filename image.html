@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Detail - RailArt</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/image.css" />
+  <script defer src="scripts/image.js"></script>
+</head>
+<body>
+  <header class="header">
+  <div class="logo">RailArt : Gallery</div>
+  <nav class="nav-links">
+    <a href="index.html">Places</a>
+    <a href="index.html">Galleries</a>
+    <a href="index.html">Stats</a>
+    <a href="index.html">People</a>
+  </nav>
+  <div class="search-auth">
+    <input type="text" placeholder="Search..." />
+    <span class="user-greeting hidden">Welcome, <a href="profile.html" id="userLink">User</a></span>
+    <a href="login.html" class="login-link">Login</a>
+    <a href="register.html" class="register-link">Register</a>
+    <a href="#" class="logout-link hidden">Log out</a>
+    <label class="switch">
+      <input type="checkbox" id="darkToggle" />
+      <span class="slider"></span>
+    </label>
+  </div>
+</header>
+
+
+  <main class="image-detail-layout">
+    <section class="image-preview">
+      <img id="imageElement" src="assets/placeholder.png" alt="Image preview" />
+      <div class="image-info-bar">
+        <span id="author">Author</span>
+        <span id="stock">Rolling-stock</span>
+      </div>
+      <div class="image-actions">
+        <button class="like-btn" id="likeBtn" title="Like">👍</button>
+        <button class="dislike-btn" id="dislikeBtn" title="Dislike">👎</button>
+        <button class="fav-btn" id="favBtn" title="Favorite">❤️</button>
+        <button class="share-btn" id="shareBtn" title="Share">💬</button>
+      </div>
+    </section>
+
+    <aside class="image-sidebar">
+      <h2 id="title">Title</h2>
+      <p><strong>Alternative title:</strong> <span id="altTitle">Alt title</span></p>
+
+      <div class="meta-section">
+        <h3>EXIF</h3>
+        <p id="exif">EXIF metadata</p>
+      </div>
+
+      <div class="meta-section">
+        <h3>Likes</h3>
+        <p><span id="likesCount">0</span> ❤️</p>
+      </div>
+
+      <div class="meta-section">
+  <h3>Comments</h3>
+  <div id="commentList">
+    <div class="comment-tile">Beautiful shot!</div>
+    <div class="comment-tile">Love the colors and atmosphere.</div>
+    <div class="comment-tile">Reminds me of my commute back home.</div>
+  </div>
+
+  <div class="leave-comment">
+    <h3>Leave a Comment</h3>
+    <textarea id="newCommentText" placeholder="Write your comment..."></textarea>
+    <button id="submitCommentBtn">Post Comment</button>
+  </div>
+</div>
+
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <p>2025 © All rights reserved and belong to respective authors</p>
+  </footer>
+</body>
+</html>
